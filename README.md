@@ -22,7 +22,7 @@ Observable<List<String>> getEmails();
 For further details, you can check on the source code of current project.
 
   
- ## Library Used
+## Library Used
   1. [Dagger 2](https://github.com/google/dagger)
   2. [Retrofit 2](https://github.com/square/retrofit)
   3. [OkHTTP](https://github.com/square/okhttp) 
