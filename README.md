@@ -23,9 +23,9 @@ For further details, you can check on the source code of current project.
 
   
  ## Library Used
-1. [Dagger 2](https://github.com/google/dagger)
-2. [Retrofit 2](https://github.com/square/retrofit)
-3. [OkHTTP](https://github.com/square/okhttp) 
-4. [OkHTTP Logging Interceptor](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor)
-5. [Rx Java](https://github.com/ReactiveX/RxJava)
-6. [Rx Android](https://github.com/ReactiveX/RxAndroid)
+  1. [Dagger 2](https://github.com/google/dagger)
+  2. [Retrofit 2](https://github.com/square/retrofit)
+  3. [OkHTTP](https://github.com/square/okhttp) 
+  4. [OkHTTP Logging Interceptor](https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor)
+  5. [Rx Java](https://github.com/ReactiveX/RxJava)
+  6. [Rx Android](https://github.com/ReactiveX/RxAndroid)
