@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="handler"
+            type="com.android.indie.school.mysimpledatabinding.main.MainActivityHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.android.indie.school.mysimpledatabinding.main.MainActivityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_fetch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{(view) -> handler.fetchData()}"
+                android:text="@string/fetch_data"
+                android:textAllCaps="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="@{viewModel.progressBarVisibility}" />
+
+    </RelativeLayout>
+
+</layout>
